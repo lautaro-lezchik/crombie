@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  background-color: #282828;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Digit";
+  src: local("Digit"),
+    url("../src/fonts/DS-DIGI.TTF") format("truetype");
+  font-weight: normal;
+  }
+
+
+.containerCard {
+  background-color: #333333;
+}
+
+.timerContainer {
+  background-color: #1b1b1d;
+}
+.disabled {
+  background-color: #1b1b1d;
+  color: #1b1b1d;
+}
+
+
+
+.accessTimeIcon, .time {
+  color: #fff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  font-family: "Digit";
+  font-size: 3em;
+}
+.unit {
+  font-size: 0.6em;
+}
+
+.selectorText {
+  color:#a7a7a7;
+
+}
+
+.arrows {
+  color:#fff;
+  fill: #fff;
+}
+
+.pwrButton {
+  color:rgb(232, 15, 15);
+  background-color: #333333;
+  border-radius: 0;
+  display: flex;
+  width:1em;
+}
+
+.circle {
+  width: 0.5em;
+  height: 0.5em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #9ad3df;
+  box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }

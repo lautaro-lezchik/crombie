@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from '@mui/material/Card';
+import { Col, Row } from 'react-bootstrap';
+import Arrows from './components/Arrows';
+import Power from './components/Power';
+import Selector from './components/Selector';
+import TimeSlider from './components/TimeSlider';
+import Timer from './components/Timer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card sx={{ maxWidth: 800 }} className='containerCard'>
+            <Row>
+              <Col>
+                <Timer />
+              </Col>
+              <Col>
+                <Row>
+                  <Arrows />
+                </Row>
+                <Row>
+                  <Power />
+                </Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Selector />
+              </Col>
+              <Col>
+                <TimeSlider />
+              </Col>
+            </Row>
+      </Card>
+    </>
   );
 }
 

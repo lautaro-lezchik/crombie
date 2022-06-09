@@ -11,11 +11,10 @@ const IncreaseTime = () => {
 
     const handleClick = (event) => {
         dispatch({type:'INCREASE_TIME', payload: event.type})
-        console.log(event.type);
     }
     return (
-        <Button className='arrowButton' onClick={handleClick} disabled={getPwr}>
-            <ArrowDropUpIcon className='arrows'/>
+        <Button className='arrowButton' variant='arrowButton' onClick={handleClick} disabled={getPwr}>
+            <ArrowDropUpIcon sx={{ color: 'white' }}/>
         </Button>
     )
 }

@@ -68,7 +68,6 @@ const TimeSlider = () => {
             <Slider
                 aria-label="Temperature"
                 defaultValue={getValue}
-                color="secondary"
                 marks={marks}
                 onChange={sendValue}
                 value={getValue}

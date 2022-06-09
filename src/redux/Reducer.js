@@ -16,7 +16,7 @@ const myReducer = (state = initialState, action)=> {
                 value:action.payload
             }
         case "SEND_UNIT":
-            const unit = action.type===false ? "MIN" : "HRS"
+            const unit = state.unit===initialState.unit ? "HRS" : "MIN"
 
             return {
                 ...state,

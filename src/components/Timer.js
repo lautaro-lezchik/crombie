@@ -9,12 +9,12 @@ const Timer = () => {
     const getValue = useSelector((state)=>state.value)
     const getUnit = useSelector((state)=>state.unit)
     const getPwr = useSelector((state)=>state.pwr)
-    console.log(getPwr);
+
 
     return (
         <Container className='timerContainer'>
             <div style={getPwr ? {opacity: 0} : {}} className='timerContainer'>
-                <Row>
+                <Row className='timerRow'>
                     <Col sm={4}>
                         <AccessTimeIcon className='accessTimeIcon'/>
                     </Col>

@@ -1,7 +1,9 @@
-*{
-  background-color: #282828;
-}
+div#root{
+background-color: #282828;
 
+
+
+}
 @font-face {
   font-family: "Digit";
   src: local("Digit"),
@@ -10,8 +12,18 @@
   }
 
 
+.generalContainer {
+background-color: #282828;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
 .containerCard {
-  background-color: #333333;
+  background-color: #333333!important;
+  width: 50%;
+  padding: 2em;
 }
 
 .timerContainer {
@@ -22,6 +34,11 @@
   color: #1b1b1d;
 }
 
+.timerRow {
+  display: flex;
+  align-items: center;
+
+}
 
 
 .accessTimeIcon, .time {
@@ -29,7 +46,9 @@
   text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
   font-family: "Digit";
   font-size: 3em;
+  margin: 0;
 }
+
 .unit {
   font-size: 0.6em;
 }
@@ -38,26 +57,44 @@
   color:#a7a7a7;
 
 }
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+}
+.arrowbutton{
 
-.arrows {
-  color:#fff;
-  fill: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)!important;
+  border-radius: 0!important;
+  width: 50%!important;
+
 }
 
 .pwrButton {
-  color:rgb(232, 15, 15);
+  color:#fff!important;
   background-color: #333333;
-  border-radius: 0;
-  display: flex;
-  width:1em;
+  border-radius: 0!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  width: 80%!important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)!important;
+}
+.pwrButton:hover {
+  border-color: #333333!important;
 }
 
 .circle {
   width: 0.5em;
   height: 0.5em;
+  margin-right: 10%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #9ad3df;
-  box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  background: #fff;
+  box-shadow: 0 0 5px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+.selectorSliderRow {
+  display: flex;
+  align-items: center;
 }

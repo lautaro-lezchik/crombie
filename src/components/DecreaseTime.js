@@ -13,14 +13,11 @@ const DecreaseTime = () => {
 
     const handleClick = (event) => {
         dispatch({type:'DECREASE_TIME', payload: event.type})
-        console.log(event.type);
     }
     return (
-        <Button className='arrowButton' onClick={handleClick} disabled={getPwr}>
+        <Button className='arrowButton' variant='arrowButton' onClick={handleClick} disabled={getPwr}>
             <ArrowDropDownIcon  sx={{ color: 'white' }} />
         </Button>
-            
-        
     )
 }
 

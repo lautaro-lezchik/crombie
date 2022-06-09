@@ -15,7 +15,6 @@ const Selector = () => {
 
     const handleChange = (event) => {
         dispatch({type:'SEND_UNIT', payload: event.target.checked})
-        console.log(event.target.checked);
     }
 
     const AntSwitch = styled(Switch)(({ theme }) => ({

@@ -1,8 +1,7 @@
+/*----- GENERAL -----*/
+
 div#root{
 background-color: #282828;
-
-
-
 }
 @font-face {
   font-family: "Digit";
@@ -26,6 +25,8 @@ height: 100vh;
   padding: 2em;
 }
 
+/*----- TIMER -----*/
+
 .timerContainer {
   background-color: #1b1b1d;
 }
@@ -40,7 +41,6 @@ height: 100vh;
 
 }
 
-
 .accessTimeIcon, .time {
   color: #fff;
   text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
@@ -53,21 +53,28 @@ height: 100vh;
   font-size: 0.6em;
 }
 
+/*----- SELECTOR -----*/
+
 .selectorText {
   color:#a7a7a7;
 
 }
+/*----- ARROWS -----*/
+
 .buttonsContainer {
   display: flex;
   align-items: center;
 }
 .arrowbutton{
-
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)!important;
   border-radius: 0!important;
-  width: 50%!important;
-
+  width: 60%!important;
 }
+.arrowbutton:hover {
+  border-color: #333333;
+}
+
+/*----- POWER -----*/
 
 .pwrButton {
   color:#fff!important;
@@ -93,6 +100,7 @@ height: 100vh;
   background: #fff;
   box-shadow: 0 0 5px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
+/*----- SLIDER -----*/
 
 .selectorSliderRow {
   display: flex;

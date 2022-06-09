@@ -61,12 +61,10 @@ const TimeSlider = () => {
             label: '100',
         },
     ];
-
-
+    
     return (
         <Box sx={{ width: 300 }}>
             <Slider
-                aria-label="Temperature"
                 defaultValue={getValue}
                 marks={marks}
                 onChange={sendValue}

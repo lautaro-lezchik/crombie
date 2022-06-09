@@ -30,14 +30,12 @@ const myReducer = (state = initialState, action)=> {
             }
         case "DECREASE_TIME":
             const newValue= state.value-1
-            console.log(newValue);
             return {
                 ...state,
                 value:newValue
             }
         case "INCREASE_TIME":
             const incValue= state.value+1
-            console.log(incValue);
             return {
                 ...state,
                 value:incValue

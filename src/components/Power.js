@@ -10,7 +10,6 @@ const Power = () => {
 
     const handleClick = (event) => {
         dispatch({type:'POWER', payload: event.type})
-        console.log(event.type);
     }
 
     const conditionalStyle = getPwr ? {backgroundColor: "gray"} :{backgroundColor: "white"}

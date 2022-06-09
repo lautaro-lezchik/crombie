@@ -29,6 +29,7 @@ height: 100vh;
 
 .timerContainer {
   background-color: #1b1b1d;
+  height: 100%;
 }
 .disabled {
   background-color: #1b1b1d;
@@ -60,15 +61,18 @@ height: 100vh;
 
 }
 /*----- ARROWS -----*/
+.arrowsRow {
+  width: 100%;
+}
 
 .buttonsContainer {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
-.arrowbutton{
+.btn-arrowbutton, .btn, .arrowbutton{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)!important;
   border-radius: 0!important;
-  width: 60%!important;
 }
 .arrowbutton:hover {
   border-color: #333333;

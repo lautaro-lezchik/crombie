@@ -17,7 +17,7 @@ function App() {
                   <Timer />
                 </Col>
                 <Col sm={4}>
-                  <Row>
+                  <Row className='arrowsRow'>
                     <Arrows />
                   </Row>
                   <Row>
